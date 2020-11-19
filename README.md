@@ -5,12 +5,11 @@ two with same name and one with different name for merge.
 ```python 
  # Boiler Plate
  def mergeList(l, r):
-    if l < = m :
-      return 
-     m = l+r//2
-     mergeList(l, m)
-     mergeList(m+1, r)
-     merge(l, m, r)
+  if l < r:
+   mid = (l+r)//2
+   mergeList(arr, l, mid)
+   mergeList(arr, mid+1, r)
+   merge(arr, l, mid, r)
 ```
 
 The main Quesiton is which personally confuse me is : how to understand recursion or recursive call?
@@ -18,6 +17,11 @@ Ans : So, the best way of understanding is by using recursive tree (along with c
 
 ## Here is Example
 ![Image Here](https://github.com/Akarsh711/DSA/blob/master/images/IMG_20201119_223602112.jpg)
-
 Consider the list/array passed to the above function with l = 0, and r = 1
+
 ![Image Here](https://github.com/Akarsh711/DSA/blob/master/images/IMG_20201119_223822894.jpg)
+If you look closely to above image then you will see that mL(0,0) called by the mL(0,1)
+mL(0,0) get's poped when it is running as ```if l < r ``` condition get's false
+and same happens for mL(1,1)
+So, when they both get poped then merge called by main array [14, 19]
+
