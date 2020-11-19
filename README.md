@@ -4,7 +4,7 @@ It is quite a recursivey algorith which gives you good test of recursion by havi
 two with same name and one with different name for merge.
 ```python 
  # Boiler Plate
- def mergeList(l, m):
+ def mergeList(l, r):
     if l < = m :
       return 
      m = l+r//2
