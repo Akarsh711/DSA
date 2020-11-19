@@ -19,3 +19,5 @@ Ans : So, the best way of understanding is by using recursive tree (along with c
 ## Here is Example
 ![Image Here](https://github.com/Akarsh711/DSA/blob/master/images/IMG_20201119_223602112.jpg)
 
+Consider the list/array passed to the above function with l = 0, and r = 1
+![Image Here]()
