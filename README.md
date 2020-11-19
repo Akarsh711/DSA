@@ -13,7 +13,7 @@ two with same name and one with different name for merge.
      merge(l, m, r)
 ```
 
-The main Quesiton which personally confuse me is : how to understand recursion or recursive call?
+The main Quesiton is which personally confuse me is : how to understand recursion or recursive call?
 Ans : So, the best way of understanding is by using recursive tree (along with call stack personally recommended!)
 
 ## Here is Example
