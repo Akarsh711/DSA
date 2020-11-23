@@ -67,13 +67,27 @@ class Node:
         else:
             return self.right.find(value)
  
-    def InorderTraversal(self):
+    def InOrderTraversal(self):
         if self.left != None:
-            self.left.InorderTraversal()
+            self.left.InOrderTraversal()
         print( self.data),
-        if self.right !=None :
-            self.right.InorderTraversal()
+        if self.right !=None:
+            self.right.InOrderTraversal()
     
+    def PreOrderTraversal(self):
+        print(self.data)
+        if self.left!= None:
+            self.left.PreOrderTraversal()
+        if self.right != None:
+            self.right.PreOrderTraversal()
+    
+    def PostOrderTraversal(self):
+        if self.left != None:
+            self.left.PostOrderTraversal()
+        if self.right != None:
+            self.right.PostOrderTraversal()
+        print(self.data)
+        
     # Another way of doing inorder
     def inorderTraversal(self, root):
         res = []
@@ -91,6 +105,11 @@ if __name__ == "__main__":
     root.insert(18)
     root.insert(22)
     print(root.find(18))
-    root.InorderTraversal()
+    root.InOrderTraversal()
+    print('-----------')
+    root.PreOrderTraversal()
+    print('-----------')
+    root.PostOrderTraversal()
     print(root.inorderTraversal(root))
+    
     input("waiting for input")
